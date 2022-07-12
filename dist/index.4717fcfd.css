@@ -11427,6 +11427,15 @@ textarea.form-control-lg {
   }
 }
 
+.slide:hover, .slide:focus {
+  box-shadow: inset 15em 0 0 0 var(--hover);
+}
+
+.slide {
+  --color: #ff1b00;
+  --hover: #ff1b00;
+}
+
 a {
   color: #fff;
   -ms-border-radius: .5rem;

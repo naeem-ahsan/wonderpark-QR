@@ -1,21 +1,21 @@
 
 @import "~bootstrap/scss/bootstrap";
 
-// .slide:hover,
-// .slide:focus {
-//   box-shadow: inset 15em 0 0 0 var(--hover);
-// }
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 15em 0 0 0 var(--hover);
+}
 
-// $colors: (
-//   slide: #ff1b00,
-// );
+$colors: (
+  slide: #ff1b00,
+);
 
-// @each $button, $color in $colors {
-//   .#{$button} {
-//     --color: #{$color};
-//     --hover: #{adjust-hue($color, 0deg)};
-//   }
-// }
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 0deg)};
+  }
+}
 
 a {
   background-color: rgba(255, 91, 0, 0.8);
