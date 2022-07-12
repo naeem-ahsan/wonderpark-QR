@@ -1,0 +1,106 @@
+
+@import "~bootstrap/scss/bootstrap";
+
+// .slide:hover,
+// .slide:focus {
+//   box-shadow: inset 15em 0 0 0 var(--hover);
+// }
+
+// $colors: (
+//   slide: #ff1b00,
+// );
+
+// @each $button, $color in $colors {
+//   .#{$button} {
+//     --color: #{$color};
+//     --hover: #{adjust-hue($color, 0deg)};
+//   }
+// }
+
+a {
+  background-color: rgba(255, 91, 0, 0.8);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition:300ms;
+  -webkit-transition:300ms;
+  -moz-transition:300ms;
+  -ms-transition:300ms;
+  -o-transition:300ms;
+
+  &:hover,&:focus { 
+    border-color: var(--hover);
+    color: #fff;
+  }
+}
+
+.os--button {
+  padding: 2.5rem 0;
+
+  @media (max-width: 575px) {
+    padding: 2rem 0;
+  }
+}
+
+.op--button {
+  padding: 2.5rem 0;
+
+  @media (max-width: 991px) {
+    display: flex;
+  }
+
+  @media (max-width: 767px) {
+    a{
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 575px) {
+    padding: 1rem 0;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    a {
+      margin: 5px 0;
+    }
+  }
+}
+
+.phone--btn {
+  padding-top: 1.5rem;
+
+  @media (max-width: 480px) {
+    padding-top: 1rem;
+  }
+}
+
+.quick--btn {
+  padding-top: 1.5rem;
+
+  @media (max-width: 480px) {
+    padding-top: 1rem;
+  }
+}
+
+.phone--btn {
+  text-align: center;
+}
+
+.main--body {
+  padding: 3rem 0;
+
+  @media screen and (max-width: 991px) {
+    padding: 2rem 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem 0;
+  }
+  
+}
